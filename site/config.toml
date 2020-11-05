@@ -1,6 +1,6 @@
 baseurl = "/"
 languageCode = "es"
-title = "Baster"
+title = "Canister"
 
 [params]
   description = "Bar de sabores."
@@ -11,6 +11,6 @@ title = "Baster"
     weight = 1
 
 [[menu.main]]
-    name = "Pedido"
+    name = "Pedidos"
     url  = "/pedido"
     weight = 2

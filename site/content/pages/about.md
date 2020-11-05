@@ -4,11 +4,11 @@ title = "About"
 url = "/about"
 +++
 
-## Something about the restaurant goes here
+## Bar de sabores.
 
 ---
 
 La pandemia lo cambia todo, pero hay que darse el gusto de saborear las raciones mas ricas con un vermut bien frio.
 
-hasta poder vernos en persona,
-# Baster
+hasta volver a vernos en persona,
+# Canister
