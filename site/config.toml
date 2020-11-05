@@ -13,4 +13,20 @@ title = "Canister"
 [[menu.main]]
     name = "Pedidos"
     url  = "/pedido"
+    weight = 5
+
+[[menu.main]]
+    name = "Galería"
+    url  = "/gallery"
     weight = 2
+
+[[menu.main]]
+    name = "Nuestros Platos"
+    url  = "/food"
+    weight = 3
+
+[[menu.main]]
+    name = "Bebidas"
+    url  = "/drinks"
+    weight = 4
+
