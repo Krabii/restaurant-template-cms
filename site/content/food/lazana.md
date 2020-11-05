@@ -7,4 +7,5 @@ description: >-
   Lazaña con carne picada, tomate y queso parmezzano.
 type: Segundos platos
 price: 10
+active: 1
 ---

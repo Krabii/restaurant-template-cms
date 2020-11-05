@@ -7,4 +7,5 @@ description: >-
   la tipica
 type: Primeros platos
 price: 6
+active: 0
 ---
