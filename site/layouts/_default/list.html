@@ -60,7 +60,8 @@
       <button class="next half-button">Next</button>
     </div>
   {{ else if eq .Section "pedidos" }}
-    <form action="https://formspree.io/f/mgepyddb" method="POST">
+    <!-- <form action="https://formspree.io/f/mgepyddb" method="POST"> -->
+    <form name="pedidos" netlify>
     <input type="text" placeholder="Tu nombre" required name="name">
     <input type="tel" placeholder="Tu teléfono" required name="_telnum">
     Recogida en tienda
@@ -79,7 +80,7 @@
                 <!-- <p>{{ .Params.price }} €</p> -->
                 {{ if .Params.active }}
                   <label for={{ .Title }}><strong>{{ .Title }}:</strong> {{ .Params.description }} {{ .Params.price }} €</label>
-                  <input type="number" id={{ .Title }} name={{ .Title }} placeholder=0 min="0" max="100">
+                  <input type="number" id={{ .Title }} name={{ .Title }} value=0 min="0" max="100">
                 {{ end }}
             {{ end }}
           {{ end }}
