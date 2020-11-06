@@ -59,6 +59,34 @@
       <button class="prev half-button">Prev</button>
       <button class="next half-button">Next</button>
     </div>
+  {{ else if eq .Section "pedidos" }}
+    <form action="https://formspree.io/f/mgepyddb" method="POST">
+    <input type="text" placeholder="Tu nombre" required name="name">
+    <input type="tel" placeholder="Tu teléfono" required name="_telnum">
+    Recogida en tienda
+    <input type="radio" id="si" name="recogida-en-tienda" value="si">
+    A Domicilio
+    <input type="radio" id="no" name="recogida-en-tienda" value="no">
+    Direccion
+    <input type="text" name="domicilio" placeholder="Solo si has pedido a domicilio">
+    {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+      {{ if eq "categories" $taxonomyname }}
+        {{ range $key, $value := $taxonomy }}
+          {{ range $value.Pages.GroupByParam "type" }}
+<!--             <h2><em>{{ .Key }}</em></h3>
+            <hr> -->
+            {{ range .Pages }}
+                <!-- <p>{{ .Params.price }} €</p> -->
+                {{ if .Params.active }}
+                  <label for={{ .Title }}><strong>{{ .Title }}:</strong> {{ .Params.description }} {{ .Params.price }} €</label>
+                  <input type="number" id={{ .Title }} name={{ .Title }} placeholder=0 min="0" max="100">
+                {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    <input type="submit" value="Enviar">
   {{ end }}
 </div>
 

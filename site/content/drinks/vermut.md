@@ -7,4 +7,5 @@ description: >-
   La receta que triunfa.
 type: Otros
 price: 7
+active: 1
 ---

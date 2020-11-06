@@ -58,6 +58,11 @@
     }
   }
 
+  input[type="radio"] {
+      display: block;
+      width: 50%;
+  }
+
   .buttons {
     text-align: center;
   }
