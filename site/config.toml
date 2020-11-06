@@ -21,12 +21,12 @@ title = "Canister"
     weight = 2
 
 [[menu.main]]
-    name = "Nuestros Platos"
+    name = "Los Platos"
     url  = "/food"
     weight = 3
 
 [[menu.main]]
-    name = "Bebidas"
+    name = "Las Bebidas"
     url  = "/drinks"
     weight = 4
 
