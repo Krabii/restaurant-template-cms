@@ -4,6 +4,7 @@ title = "Canister"
 
 [params]
   description = "Bar de sabores."
+  ga_analytics = 'G-VKKGWY8GL7'
 
 [[menu.main]]
     name = "About"
@@ -12,7 +13,7 @@ title = "Canister"
 
 [[menu.main]]
     name = "Pedidos"
-    url  = "/pedido"
+    url  = "/pedidos"
     weight = 5
 
 [[menu.main]]
